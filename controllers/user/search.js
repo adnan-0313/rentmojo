@@ -3,8 +3,8 @@ require("dotenv").config();
 var CustomError = require("../../error/customError");
 
 exports.searchUser = async (req, res) => {
-  const email = req.body?.email;
-  const name = req.body?.name;
+  const email = req.body.email;
+  const name = req.body.name;
 
   const query = (name)?{name:name}:{email:email}
 
