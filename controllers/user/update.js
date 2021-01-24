@@ -2,8 +2,8 @@ const User = require("../../model/User");
 var CustomError = require("../../error/customError");
 
 exports.userUpdate = async (req, res) => {
-  const phoneNumber = req.body?.phoneNumber;
-  const name = req.body?.name;
+  const phoneNumber = req.body.phoneNumber;
+  const name = req.body.name;
   let query;
 
   if (phoneNumber && name) {
